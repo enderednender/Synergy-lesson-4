@@ -1,0 +1,6 @@
+# Вводится строка. Нужно превратить строку в список, разбив строку на слова и вывести список из слов, записанный в обратном порядке.
+# Ввод:Death there mirth way the noisy merit
+# Вывод:['merit', 'noisy', 'the', 'way', 'mirth', 'there', 'Death']
+
+txt = 'Death there mirth way the noisy merit'
+print(txt.split()[::-1])
