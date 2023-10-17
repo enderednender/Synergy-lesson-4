@@ -1,0 +1,6 @@
+# Дана строка. Программа подсчитывает количество символов x и y и выводит строку вида "x: (число), y: (число)."
+# Подсказка: вспомните метод count, изученный на занятии
+letters = 'x y x y x y x y x y x x x y y'
+letters.split()
+print('X =', letters.count('x'))
+print('Y =', letters.count('y'))
