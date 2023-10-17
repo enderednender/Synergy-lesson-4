@@ -1,0 +1,2 @@
+txt = 'In the hole in the ground there lived a hobbit'
+print(txt[::2])
