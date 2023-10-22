@@ -1,0 +1,23 @@
+#Вводится текст со сбалансированными скобками, программа выводит на экран текст без скобок и их содержимого.
+#На пробелы и знаки препинания внимание не обращать, вложенных скобок в исходной строке нет.
+# Ввод:When he saw Sally (a girl he used to go to school with) in the shop, he could not believe his eyes. She was fantastic (as always)!
+# Вывод: a girl he used to go to school with as always
+txt = 'When he saw Sally (a girl he used to go to school with) in the shop, he could not believe his eyes. She was fantastic (as always)!'
+
+start_index = 0
+
+while True:
+
+    opening_bracket = txt.find("(", start_index)
+
+    if opening_bracket == -1:
+        break
+
+    closing_bracket = txt.find(")", opening_bracket)
+
+    if closing_bracket == -1:
+        break
+    content = txt[opening_bracket + 1: closing_bracket]
+    print(content)
+
+    start_index = closing_bracket + 1
